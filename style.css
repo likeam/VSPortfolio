@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&display=swap");
+
+/* HOME PAGE */
+
+.HomePage_container {
+    display: flex;
+    justify-content: center;
+    height: 75vh;
+    flex-direction: column;
+    position: relative
+}
+
+.HomePage_background {
+    font-size: 5rem;
+    font-family: Montserrat;
+    line-height: 1.1;
+    color:  #24292e;
+    position: absolute;
+    z-index: 1
+}
+
+.HomePage_foreground {
+    z-index: 2;
+    display: flex;
+    color:#f9826c;
+    justify-content: space-between;
+    align-items: center
+}
+
+.HomePage_name {
+    color: #eee;
+    font-size: 3.5rem;
+    font-weight: 500;
+    margin-bottom: .5rem
+}
+
+.HomePage_bio {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    color: #eee;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 3rem;
+    position: relative
+}
+
+
+/* LAYOUTS */
+
+
+.Layout_main {
+    display: flex;
+    background:  #24292e;
+}
+
+.Layout_content {
+    padding: 2rem;
+    color:  #24292e;
+    font-family: JetBrains Mono, monospace;
+    flex: 1 1;
+    height: 85vh;
+    overflow-y: auto;
+    scrollbar-width: 10px;
+    scrollbar-color:#f9826c;
+}
+
+/* TITILE BAR */
+
+
+.Titlebar_titlebar {
+    background: #1f2428;
+    height: 30px;
+    padding: 0 .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: Source Sans Pro, sans-serif;
+    font-size: .85rem;
+    border-bottom: 1px solid #191d20
+}
+
+.Titlebar_items {
+    flex: 1 1;
+    display: flex;
+    margin-right: auto;
+    margin-left: .5rem
+}
+
+.Titlebar_title{
+    flex: 1 1;
+    text-align: center
+}
+
+.Titlebar_items>* {
+    padding: 0 .5rem;
+    cursor: pointer
+}
+
+.Titlebar_windowButtons {
+    flex: 1 1;
+    display: flex;
+    align-items: center;
+    margin-left: auto
+}
+
+.Titlebar_windowButtons * {
+    margin-left: .5rem;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    cursor: pointer
+}
+
+.Titlebar_minimize {
+    background: #f1fa8c;
+    margin-left: auto
+}
+
+.Titlebar_maximize {
+    background: #50fa7b
+}
+
+.Titlebar_close {
+    background: #f55
+}
+
+/* SLIDE BAR */
+
+.Sidebar_sidebar {
+    background: #24292e;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 4.5vw;
+    min-width: 40px;
+    height: calc(100vh - 30px - 25px)
+}
+
+.Sidebar_iconContainer {
+    cursor: pointer;
+    width: 100%
+}
+
+
+.Sidebar_icon {
+    height: 48px;
+    width: 48px;
+    padding: .65rem 0;
+    display: block;
+    margin: 0 auto
+}
+
+/* EXPLORER  */
+
+.Explorer_explorer {
+    background: #191e2a;
+    width: 18vw;
+    color: #e1e4e8;
+    font-family: Source Sans Pro, sans-serif;
+    border-right: 1px solid #363f50;
+}
+
+.Explorer_title {
+    padding: .5rem .75rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: .9rem;
+    letter-spacing: 1px;
+    margin-bottom: .75rem
+}
+
+.Explorer_heading {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .8rem;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 0 .5rem
+}
+
+.Explorer_checkbox {
+    position: absolute;
+    opacity: 0;
+    z-index: -1
+}
+
+.Explorer_files {
+    padding: .5rem 0;
+    cursor: pointer
+}
+
+.Explorer_file {
+    padding: .2rem 1rem;
+    display: flex;
+    align-items: center;
+    font-size: .875rem
+}
+
+.Explorer_file p {
+    margin-left: 5px
+}
+
+/* BOTTOM BAR */
+
+.Bottombar_bottomBar {
+    background: 24292e;
+    height: 25px;
+    border-top: 1px solid #1b1f23;
+    color: #e1e4e8;
+    padding: 0 .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: .8rem
+}
+
+.Bottombar_bottomBar a {
+    color: #fff;
+    text-decoration: none
+}
+
+.Bottombar_icon {
+    margin-right: 4px
+}
+
+.Bottombar_container,
+.Bottombar_section {
+    display: flex;
+    align-items: center
+}
+
+.Bottombar_section {
+    margin-right: .5rem;
+    height: 24px;
+    padding: 0 .2rem;
+    cursor: pointer;
+    font-family: Source Sans Pro, sans-serif
+}
+
+/* TABLES */
+
+
+
+.Tab_tab {
+    padding: .5rem 1.25rem;
+    background: #01111d;
+    color: #ececec;
+    display: flex;
+    align-items: center;
+    border: 1px solid #24292e;
+    font-family: Source Sans Pro, sans-serif;
+    font-size: .9rem;
+    cursor: pointer
+}
+
+.Tab_tab p {
+    margin-left: 5px
+}
+
+
+
+.Tabsbar_tabs {
+    display: flex;
+    background: #1f2428;
+    overflow-x: auto
+}
+

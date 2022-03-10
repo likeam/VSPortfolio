@@ -60,8 +60,8 @@
 
 .HomePage_bio:before {
     background: var(--main-bg);
-    -webkit-animation: HomePage_typewriter__hlJD0 2.5s steps(24) .5s forwards;
-    animation: HomePage_typewriter__hlJD0 2.5s steps(24) .5s forwards
+    -webkit-animation: HomePage_typewriter 2.5s steps(24) .5s forwards;
+    animation: HomePage_typewriter 2.5s steps(24) .5s forwards
 }
 
 .HomePage_bio:after {

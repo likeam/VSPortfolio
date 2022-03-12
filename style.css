@@ -686,6 +686,127 @@
     }
 }
 
+
+/* CONTACT PAGE MAIN */
+.ContactCode_code {
+    counter-reset: line;
+    font-size: 1.2rem;
+    line-height: 2rem
+}
+
+.ContactCode_line:before {
+    content: counter(line);
+    counter-increment: line;
+    margin-right: 1rem;
+    color: grey
+}
+
+.ContactCode_code    a {
+    color: var(--accent-color);
+    text-decoration: none
+}
+
+.ContactCode_code    a:hover {
+    text-decoration: underline
+}
+
+.ContactCode_className     {
+    color: var(--accent-color)
+}
+
+@media screen and (max-width:600px) {
+    .ContactCode_code    {
+        font-size: .85rem;
+        line-height: 1.5rem
+    }
+}
+
+.ContactPage_container      {
+    display: flex;
+    justify-content: center;
+    grid-gap: 2rem;
+    gap: 2rem
+}
+
+.ContactPage_container     >* {
+    flex: 1 1
+}
+
+.ContactPage_container     >div:first-child {
+    border-right: 1px solid var(--accent-color)
+}
+
+.ContactPage_container      h1 {
+    margin-bottom: 2rem;
+    font-size: 1.5rem
+}
+
+.ContactPage_flex       {
+    display: flex;
+    grid-gap: 1rem;
+    gap: 1rem
+}
+
+.ContactPage_form label {
+    display: block;
+    margin-bottom: .5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: .8rem
+}
+
+.ContactPage_form        input,
+.ContactPage_form        textarea {
+    font-family: JetBrains Mono;
+    margin-bottom: 1.5rem;
+    background: var(--article-bg);
+    color: var(--text-color);
+    border: none;
+    font-size: 1rem;
+    padding: .75rem;
+    width: 100%;
+    resize: none
+}
+
+.ContactPage_form input:focus,
+.ContactPage_form textarea:focus {
+    outline: 1px solid var(--accent-color)
+}
+
+.ContactPage_form button {
+    background: var(--accent-color);
+    color: var(--main-bg);
+    border: none;
+    cursor: pointer;
+    padding: .5rem 1rem;
+    font-size: .9rem;
+    font-weight: 700;
+    text-transform: uppercase
+}
+
+.ContactPage_heading {
+    margin-bottom: 1.5rem
+}
+
+@media screen and (max-width:1200px) {
+    .ContactPage_container      {
+        display: block
+    }
+    .ContactPage_container     >div:first-child {
+        border-right: none;
+        margin-bottom: 2.5rem
+    }
+}
+
+@media screen and (max-width:600px) {
+    .ContactPage_flex       {
+        display: block
+    }
+    .ContactPage_form        input {
+        font-size: .85rem
+    }
+}
+
 /* DATA */
  
 :root {
